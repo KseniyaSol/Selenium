@@ -17,7 +17,7 @@ class Untitled2(unittest.TestCase):
     
     def test_untitled2(self):
         driver = self.driver
-        driver.get(self.base_url + "/php4dvd/#!/sort/name%20asc/")
+        driver.get(self.base_url + "/php4dvd/")
         driver.find_element_by_css_selector("img[alt=\"Add movie\"]").click()
         driver.find_element_by_id("imdbsearch").clear()
         driver.find_element_by_id("imdbsearch").send_keys("Memories of geisha")
